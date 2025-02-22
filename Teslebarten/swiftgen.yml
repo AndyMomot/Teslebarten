@@ -1,0 +1,22 @@
+xcassets:
+  - inputs:
+    - Teslebarten/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: Teslebarten/Resources/Images/Images.generated.swift
+#  - inputs:
+#    - Teslebarten/Resources/Colors/Colors.xcassets
+#    outputs:
+#      - templateName: swift5
+#        output: Teslebarten/Resources/Colors/Colors.generated.swift
+#        params:
+#          enumName: Colors
+          
+fonts:
+  - inputs: Teslebarten/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: Teslebarten/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
