@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -59,8 +59,18 @@
 		47ED23FA2D6A45EF00C1A6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ED23B12D6A45EF00C1A6BB /* LaunchScreen.storyboard */; };
 		47ED24052D6A534400C1A6BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24022D6A534400C1A6BB /* LoginView.swift */; };
 		47ED24062D6A534400C1A6BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24032D6A534400C1A6BB /* LoginViewModel.swift */; };
-		47ED240F2D6B2CAD00C1A6BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED240C2D6B2CAD00C1A6BB /* HomeView.swift */; };
-		47ED24102D6B2CAD00C1A6BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED240D2D6B2CAD00C1A6BB /* HomeViewModel.swift */; };
+		47ED24292D6B731200C1A6BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24222D6B731200C1A6BB /* HomeView.swift */; };
+		47ED242A2D6B731200C1A6BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24232D6B731200C1A6BB /* HomeViewModel.swift */; };
+		47ED242B2D6B731200C1A6BB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24252D6B731200C1A6BB /* ProfileView.swift */; };
+		47ED242C2D6B731200C1A6BB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24262D6B731200C1A6BB /* ProfileViewModel.swift */; };
+		47ED24312D6B73A100C1A6BB /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED242F2D6B73A100C1A6BB /* CustomNavigationView.swift */; };
+		47ED24342D6B79C500C1A6BB /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24322D6B79C500C1A6BB /* NotificationManager.swift */; };
+		47ED243A2D6B7C3F00C1A6BB /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24382D6B7C3F00C1A6BB /* ProfileButton.swift */; };
+		47ED243C2D6B852B00C1A6BB /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED243B2D6B852B00C1A6BB /* Shift.swift */; };
+		47ED24452D6B871400C1A6BB /* AddShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24422D6B871400C1A6BB /* AddShiftView.swift */; };
+		47ED24462D6B871400C1A6BB /* AddShiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24432D6B871400C1A6BB /* AddShiftViewModel.swift */; };
+		47ED244E2D6B8D4500C1A6BB /* ShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED244C2D6B8D4500C1A6BB /* ShiftCell.swift */; };
+		47ED24512D6B8DBA00C1A6BB /* ShiftDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24502D6B8DBA00C1A6BB /* ShiftDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,13 +128,19 @@
 		47ED23B02D6A45EF00C1A6BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47ED24022D6A534400C1A6BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		47ED24032D6A534400C1A6BB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		47ED240C2D6B2CAD00C1A6BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		47ED240D2D6B2CAD00C1A6BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		47ED24222D6B731200C1A6BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		47ED24232D6B731200C1A6BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		47ED24252D6B731200C1A6BB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		47ED24262D6B731200C1A6BB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		47ED242F2D6B73A100C1A6BB /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		47ED24322D6B79C500C1A6BB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		47ED24382D6B7C3F00C1A6BB /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
+		47ED243B2D6B852B00C1A6BB /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		47ED24422D6B871400C1A6BB /* AddShiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftView.swift; sourceTree = "<group>"; };
+		47ED24432D6B871400C1A6BB /* AddShiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftViewModel.swift; sourceTree = "<group>"; };
+		47ED244C2D6B8D4500C1A6BB /* ShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftCell.swift; sourceTree = "<group>"; };
+		47ED24502D6B8DBA00C1A6BB /* ShiftDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		47ED24112D6B2CFB00C1A6BB /* NavigationView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NavigationView; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		47ED22692D6A451B00C1A6BB /* Frameworks */ = {
@@ -259,7 +275,7 @@
 		47ED235B2D6A45EF00C1A6BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				47ED24112D6B2CFB00C1A6BB /* NavigationView */,
+				47ED24302D6B73A100C1A6BB /* NavigationView */,
 				47ED234C2D6A45EF00C1A6BB /* BackButton */,
 				47ED234E2D6A45EF00C1A6BB /* CustomProgressView */,
 				47ED23502D6A45EF00C1A6BB /* CustomTextField */,
@@ -287,6 +303,7 @@
 			children = (
 				47ED235D2D6A45EF00C1A6BB /* User.swift */,
 				47ED235E2D6A45EF00C1A6BB /* WorkoutTask.swift */,
+				47ED243B2D6B852B00C1A6BB /* Shift.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -357,6 +374,7 @@
 		47ED23782D6A45EF00C1A6BB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				47ED24332D6B79C500C1A6BB /* NotificationManager */,
 				47ED23742D6A45EF00C1A6BB /* Defaults */,
 				47ED23772D6A45EF00C1A6BB /* FileManager */,
 			);
@@ -376,7 +394,7 @@
 		47ED23A12D6A45EF00C1A6BB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				47ED240E2D6B2CAD00C1A6BB /* Home */,
+				47ED24282D6B731200C1A6BB /* HomeFlow */,
 				47ED23982D6A45EF00C1A6BB /* TabBar */,
 			);
 			path = Main;
@@ -463,13 +481,76 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		47ED240E2D6B2CAD00C1A6BB /* Home */ = {
+		47ED24242D6B731200C1A6BB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				47ED240C2D6B2CAD00C1A6BB /* HomeView.swift */,
-				47ED240D2D6B2CAD00C1A6BB /* HomeViewModel.swift */,
+				47ED244D2D6B8D4500C1A6BB /* Views */,
+				47ED24222D6B731200C1A6BB /* HomeView.swift */,
+				47ED24232D6B731200C1A6BB /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		47ED24272D6B731200C1A6BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				47ED24392D6B7C3F00C1A6BB /* Views */,
+				47ED24252D6B731200C1A6BB /* ProfileView.swift */,
+				47ED24262D6B731200C1A6BB /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		47ED24282D6B731200C1A6BB /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				47ED24242D6B731200C1A6BB /* Home */,
+				47ED24272D6B731200C1A6BB /* Profile */,
+				47ED24442D6B871400C1A6BB /* AddShift */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		47ED24302D6B73A100C1A6BB /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				47ED242F2D6B73A100C1A6BB /* CustomNavigationView.swift */,
+			);
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		47ED24332D6B79C500C1A6BB /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				47ED24322D6B79C500C1A6BB /* NotificationManager.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
+		47ED24392D6B7C3F00C1A6BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47ED24382D6B7C3F00C1A6BB /* ProfileButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47ED24442D6B871400C1A6BB /* AddShift */ = {
+			isa = PBXGroup;
+			children = (
+				47ED24422D6B871400C1A6BB /* AddShiftView.swift */,
+				47ED24432D6B871400C1A6BB /* AddShiftViewModel.swift */,
+			);
+			path = AddShift;
+			sourceTree = "<group>";
+		};
+		47ED244D2D6B8D4500C1A6BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47ED244C2D6B8D4500C1A6BB /* ShiftCell.swift */,
+				47ED24502D6B8DBA00C1A6BB /* ShiftDetails.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,9 +568,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				47ED24112D6B2CFB00C1A6BB /* NavigationView */,
 			);
 			name = Teslebarten;
 			packageProductDependencies = (
@@ -587,7 +665,11 @@
 				47ED23B32D6A45EF00C1A6BB /* AppDelegate.swift in Sources */,
 				47ED23B42D6A45EF00C1A6BB /* RootViewController.swift in Sources */,
 				47ED23B52D6A45EF00C1A6BB /* SceneDelegate.swift in Sources */,
+				47ED243A2D6B7C3F00C1A6BB /* ProfileButton.swift in Sources */,
+				47ED243C2D6B852B00C1A6BB /* Shift.swift in Sources */,
+				47ED24312D6B73A100C1A6BB /* CustomNavigationView.swift in Sources */,
 				47ED23B62D6A45EF00C1A6BB /* Date+Additions.swift in Sources */,
+				47ED24512D6B8DBA00C1A6BB /* ShiftDetails.swift in Sources */,
 				47ED23B72D6A45EF00C1A6BB /* Double+Additions.swift in Sources */,
 				47ED23B82D6A45EF00C1A6BB /* String+Additions.swift in Sources */,
 				47ED23B92D6A45EF00C1A6BB /* UINavigationController+Additions.swift in Sources */,
@@ -600,24 +682,30 @@
 				47ED23C02D6A45EF00C1A6BB /* DatePickerView.swift in Sources */,
 				47ED23C12D6A45EF00C1A6BB /* MenuPicker.swift in Sources */,
 				47ED23C22D6A45EF00C1A6BB /* NavigationBarTitle.swift in Sources */,
+				47ED24342D6B79C500C1A6BB /* NotificationManager.swift in Sources */,
 				47ED23C32D6A45EF00C1A6BB /* NextButton.swift in Sources */,
 				47ED23C42D6A45EF00C1A6BB /* SwiftUIViewWebView.swift in Sources */,
 				47ED23C52D6A45EF00C1A6BB /* User.swift in Sources */,
 				47ED23C62D6A45EF00C1A6BB /* WorkoutTask.swift in Sources */,
+				47ED244E2D6B8D4500C1A6BB /* ShiftCell.swift in Sources */,
 				47ED23C72D6A45EF00C1A6BB /* Colors.generated.swift in Sources */,
 				47ED23C82D6A45EF00C1A6BB /* Fonts.generated.swift in Sources */,
 				47ED23C92D6A45EF00C1A6BB /* Images.generated.swift in Sources */,
 				47ED23CA2D6A45EF00C1A6BB /* DefaultsService.swift in Sources */,
 				47ED23CB2D6A45EF00C1A6BB /* FileManager+Image.swift in Sources */,
 				47ED23CC2D6A45EF00C1A6BB /* FileManagerService.swift in Sources */,
-				47ED240F2D6B2CAD00C1A6BB /* HomeView.swift in Sources */,
-				47ED24102D6B2CAD00C1A6BB /* HomeViewModel.swift in Sources */,
 				47ED23DF2D6A45EF00C1A6BB /* TabBar.swift in Sources */,
 				47ED23E02D6A45EF00C1A6BB /* TabBarCustomView.swift in Sources */,
+				47ED24292D6B731200C1A6BB /* HomeView.swift in Sources */,
+				47ED242A2D6B731200C1A6BB /* HomeViewModel.swift in Sources */,
+				47ED242B2D6B731200C1A6BB /* ProfileView.swift in Sources */,
+				47ED242C2D6B731200C1A6BB /* ProfileViewModel.swift in Sources */,
 				47ED24052D6A534400C1A6BB /* LoginView.swift in Sources */,
 				47ED24062D6A534400C1A6BB /* LoginViewModel.swift in Sources */,
 				47ED23E12D6A45EF00C1A6BB /* TabBarViewModel.swift in Sources */,
 				47ED23E62D6A45EF00C1A6BB /* OnboardingView.swift in Sources */,
+				47ED24452D6B871400C1A6BB /* AddShiftView.swift in Sources */,
+				47ED24462D6B871400C1A6BB /* AddShiftViewModel.swift in Sources */,
 				47ED23E72D6A45EF00C1A6BB /* OnboardingViewModel.swift in Sources */,
 				47ED23E82D6A45EF00C1A6BB /* OnboardingViewTabView.swift in Sources */,
 				47ED23E92D6A45EF00C1A6BB /* PreloaderView.swift in Sources */,

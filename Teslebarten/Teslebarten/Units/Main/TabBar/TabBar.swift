@@ -10,7 +10,7 @@ struct TabBar: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection: $viewModel.selection) {
-                Text("home")
+                HomeView()
                     .tag(TabBarSelectionView.home.rawValue)
                 
                 Text("clients")
@@ -31,9 +31,10 @@ struct TabBar: View {
             if viewModel.isShowTabBar {
                 TabBarCustomView(selectedItem: $viewModel.selection)
                     .frame(height: UIScreen.main.bounds.height * 0.09)
-                    .padding(.horizontal, 20)
+                    .padding([.horizontal, .bottom], 20)
             }
         }
+        .ignoresSafeArea(edges: .bottom)
     }
 }
 

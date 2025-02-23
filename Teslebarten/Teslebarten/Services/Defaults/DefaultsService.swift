@@ -46,24 +46,19 @@ extension DefaultsService {
         }
     }
     
-    var daysWithoutSugar: [Date] {
+    var shifts: [Shift] {
         get {
-            if let data = standard.data(forKey: Keys.daysWithoutSugar.rawValue),
-               let items = try? JSONDecoder().decode([Date].self, from: data) {
+            if let data = standard.data(forKey: Keys.shifts.rawValue),
+               let items = try? JSONDecoder().decode([Shift].self, from: data) {
                 return items
             }
             return []
         }
         set {
             if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.daysWithoutSugar.rawValue)
+                standard.set(data, forKey: Keys.shifts.rawValue)
             }
         }
-    }
-    
-    var lastMoodQuestionDate: Date? {
-        get { standard.object(forKey: Keys.lastMoodQuestionDate.rawValue) as? Date }
-        set { standard.set(newValue, forKey: Keys.lastMoodQuestionDate.rawValue) }
     }
 }
 
@@ -72,7 +67,6 @@ extension DefaultsService {
     enum Keys: String {
         case flow
         case user
-        case daysWithoutSugar
-        case lastMoodQuestionDate
+        case shifts
     }
 }

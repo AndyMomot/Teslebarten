@@ -13,6 +13,23 @@ struct CustomNavigationView: View {
     
     var body: some View {
         HStack(spacing: 10) {
+            if let brandImage {
+                brandImage
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 80, height: 40)
+                    .clipShape(RoundedRectangle(cornerRadius: 4))
+            }
+            
+            Spacer()
+            
+            if let brandName {
+                Text(brandName)
+                    .foregroundStyle(.white)
+                    .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 14))
+                    .multilineTextAlignment(.center)
+            }
+            
             Spacer()
             
             if let brandImage {
@@ -20,16 +37,8 @@ struct CustomNavigationView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: 80, height: 40)
-                    .clipShape(Rectangle())
-                
-                if let brandName {
-                    Text(brandName)
-                        .foregroundStyle(.white)
-                        .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 14))
-                }
+                    .hidden()
             }
-            
-            Spacer()
         }
         .padding(12)
         .background(.appleRed)

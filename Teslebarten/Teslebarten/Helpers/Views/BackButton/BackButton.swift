@@ -1,10 +1,3 @@
-//
-//  BackButton.swift
-//  Libarorent
-//
-//  Created by Andrii Momot on 07.10.2024.
-//
-
 import SwiftUI
 
 struct BackButton: View {
@@ -22,6 +15,10 @@ struct BackButton: View {
                     dismiss.callAsFunction()
                 } label: {
                     Image(systemName: "chevron.left")
+                        .foregroundStyle(.graphite)
+                        .padding(14)
+                        .background(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
                 }
             }
             
@@ -39,7 +36,7 @@ struct BackButton: View {
                     .hidden()
             }
         }
-        .foregroundStyle(.darkPurple)
+        .foregroundStyle(.appleRed)
         .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 18))
         .navigationBarBackButtonHidden()
     }

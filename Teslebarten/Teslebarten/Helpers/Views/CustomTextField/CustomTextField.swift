@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CustomTextField: View {
-    var title: String = ""
+    var title: String
     var placeholder: String = ""
     var isDynamic = false
     var showPencil = false
@@ -80,7 +80,8 @@ private extension CustomTextField {
         
         ScrollView {
             VStack(spacing: 20) {
-                CustomTextField(placeholder: "placeholder",
+                CustomTextField(title: "",
+                                placeholder: "placeholder",
                                 showPencil: true,
                                 text: .constant("Some text"))
                 

@@ -1,16 +1,11 @@
-//
-//  ImagePicker.swift
-//  Chainestery
-//
-//  Created by Andrii Momot on 18.08.2024.
-//
-
 import SwiftUI
 import UIKit
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage
     @Environment(\.presentationMode) var presentationMode
+    
+    var onSelect: ((UIImage) -> Void)?
 
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -35,6 +30,7 @@ struct ImagePicker: UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let selectedImage = info[.originalImage] as? UIImage {
                 parent.selectedImage = selectedImage
+                parent.onSelect?(selectedImage)
             }
             parent.presentationMode.wrappedValue.dismiss()
         }

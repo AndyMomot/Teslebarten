@@ -23,6 +23,23 @@ struct LoginView: View {
                         .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 20))
                     
                     VStack(alignment: .leading, spacing: 20) {
+                        Button {
+                            viewModel.showUserImagePicker.toggle()
+                        } label: {
+                            HStack(spacing: 20) {
+                                if viewModel.userImage == UIImage() {
+                                    imagePickerPlaceholder
+                                } else {
+                                    selectedImage(uiImage: viewModel.userImage)
+                                }
+                                
+                                Text("Añade tu foto")
+                                    .foregroundStyle(.graphite)
+                                    .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 16))
+                                Spacer()
+                            }
+                        }
+                        
                         CustomTextField(
                             title: "Apodo",
                             placeholder: "Ingresa tu apodo",
@@ -35,35 +52,21 @@ struct LoginView: View {
                             text: $viewModel.brandName
                         )
                         
-                        HStack(spacing: 20) {
-                            Button {
-                                viewModel.showImagePicker.toggle()
-                            } label: {
-                                if viewModel.image == UIImage() {
-                                    Image(systemName: "photo.badge.plus")
-                                        .resizable()
-                                        .scaledToFill()
-                                        .foregroundStyle(.appleRed)
-                                        .frame(width: 34, height: 34)
-                                        .padding()
-                                        .overlay {
-                                            RoundedRectangle(cornerRadius: 15)
-                                                .stroke(.graphite, lineWidth: 1)
-                                        }
-                                        .padding(1)
+                        Button {
+                            viewModel.showBrandImagePicker.toggle()
+                        } label: {
+                            HStack(spacing: 20) {
+                                if viewModel.brandImage == UIImage() {
+                                    imagePickerPlaceholder
                                 } else {
-                                    Image(uiImage: viewModel.image)
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 70, height: 70)
-                                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                                    selectedImage(uiImage: viewModel.brandImage)
                                 }
+                                
+                                Text("Añadir un logotipo")
+                                    .foregroundStyle(.graphite)
+                                    .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 16))
+                                Spacer()
                             }
-                            
-                            Text("Añadir un logotipo")
-                                .foregroundStyle(.graphite)
-                                .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 16))
-                            Spacer()
                         }
                     }
                     
@@ -90,9 +93,36 @@ struct LoginView: View {
             }
             .scrollIndicators(.never)
         }
-        .sheet(isPresented: $viewModel.showImagePicker) {
-            ImagePicker(selectedImage: $viewModel.image)
+        .sheet(isPresented: $viewModel.showUserImagePicker) {
+            ImagePicker(selectedImage: $viewModel.userImage)
         }
+        .sheet(isPresented: $viewModel.showBrandImagePicker) {
+            ImagePicker(selectedImage: $viewModel.brandImage)
+        }
+    }
+}
+
+private extension LoginView {
+    func selectedImage(uiImage: UIImage) -> some View {
+        Image(uiImage: uiImage)
+            .resizable()
+            .scaledToFill()
+            .frame(width: 70, height: 70)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+    }
+    
+    var imagePickerPlaceholder: some View {
+        Image(systemName: "photo.badge.plus")
+            .resizable()
+            .scaledToFill()
+            .foregroundStyle(.appleRed)
+            .frame(width: 34, height: 34)
+            .padding()
+            .overlay {
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(.graphite, lineWidth: 1)
+            }
+            .padding(1)
     }
 }
 
