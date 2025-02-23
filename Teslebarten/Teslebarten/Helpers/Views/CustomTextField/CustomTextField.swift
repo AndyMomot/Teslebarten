@@ -31,7 +31,7 @@ struct CustomTextField: View {
                                           isDynamic: isDynamic)
                     }
                 }
-                .background(.white)
+                .background(.clear)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .overlay {
                     RoundedRectangle(cornerRadius: 15)
@@ -49,7 +49,7 @@ struct CustomTextField: View {
                 .foregroundStyle(.graphite)
                 .padding(.horizontal, 30)
                 .padding(.vertical)
-                .background(.white)
+                .background(.clear)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .overlay {
                     RoundedRectangle(cornerRadius: 15)

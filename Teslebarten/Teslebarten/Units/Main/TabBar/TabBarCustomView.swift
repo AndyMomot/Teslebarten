@@ -7,7 +7,8 @@ struct TabBarCustomView: View {
         .init(imageName: Asset.tab1.name),
         .init(imageName: Asset.tab2.name),
         .init(imageName: Asset.tab3.name),
-        .init(imageName: Asset.tab4.name)
+        .init(imageName: Asset.tab4.name),
+        .init(imageName: Asset.tab5.name)
     ]
     
     private var arrange: [Int] {

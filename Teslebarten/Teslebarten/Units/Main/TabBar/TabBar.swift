@@ -13,7 +13,7 @@ struct TabBar: View {
                 HomeView()
                     .tag(TabBarSelectionView.home.rawValue)
                 
-                Text("clients")
+                ClientsView()
                     .tag(TabBarSelectionView.clients.rawValue)
                 
                 Text("tables")

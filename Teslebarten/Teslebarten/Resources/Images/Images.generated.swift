@@ -34,6 +34,7 @@ internal enum Asset {
   internal static let tip9 = ImageAsset(name: "tip9")
   internal static let appVersionSB = ImageAsset(name: "appVersionSB")
   internal static let background = ImageAsset(name: "background")
+  internal static let client = ImageAsset(name: "client")
   internal static let cup = ImageAsset(name: "cup")
   internal static let documentSB = ImageAsset(name: "documentSB")
   internal static let greenCheck = ImageAsset(name: "greenCheck")

@@ -33,6 +33,7 @@ struct ShiftCell: View {
                 .foregroundStyle(.gray)
                 .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 10))
             }
+            
             HStack(spacing: .zero) {
                 Rectangle()
                     .fill(.appleRed)

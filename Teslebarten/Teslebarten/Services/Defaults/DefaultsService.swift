@@ -60,6 +60,21 @@ extension DefaultsService {
             }
         }
     }
+    
+    var clients: [Client] {
+        get {
+            if let data = standard.data(forKey: Keys.clients.rawValue),
+               let items = try? JSONDecoder().decode([Client].self, from: data) {
+                return items
+            }
+            return []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.set(data, forKey: Keys.clients.rawValue)
+            }
+        }
+    }
 }
 
 // MARK: - Keys
@@ -68,5 +83,6 @@ extension DefaultsService {
         case flow
         case user
         case shifts
+        case clients
     }
 }
