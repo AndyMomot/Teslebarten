@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -59,6 +59,8 @@
 		47ED23FA2D6A45EF00C1A6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ED23B12D6A45EF00C1A6BB /* LaunchScreen.storyboard */; };
 		47ED24052D6A534400C1A6BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24022D6A534400C1A6BB /* LoginView.swift */; };
 		47ED24062D6A534400C1A6BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24032D6A534400C1A6BB /* LoginViewModel.swift */; };
+		47ED240F2D6B2CAD00C1A6BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED240C2D6B2CAD00C1A6BB /* HomeView.swift */; };
+		47ED24102D6B2CAD00C1A6BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED240D2D6B2CAD00C1A6BB /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,7 +118,13 @@
 		47ED23B02D6A45EF00C1A6BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47ED24022D6A534400C1A6BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		47ED24032D6A534400C1A6BB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		47ED240C2D6B2CAD00C1A6BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		47ED240D2D6B2CAD00C1A6BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		47ED24112D6B2CFB00C1A6BB /* NavigationView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NavigationView; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		47ED22692D6A451B00C1A6BB /* Frameworks */ = {
@@ -251,6 +259,7 @@
 		47ED235B2D6A45EF00C1A6BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				47ED24112D6B2CFB00C1A6BB /* NavigationView */,
 				47ED234C2D6A45EF00C1A6BB /* BackButton */,
 				47ED234E2D6A45EF00C1A6BB /* CustomProgressView */,
 				47ED23502D6A45EF00C1A6BB /* CustomTextField */,
@@ -367,6 +376,7 @@
 		47ED23A12D6A45EF00C1A6BB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				47ED240E2D6B2CAD00C1A6BB /* Home */,
 				47ED23982D6A45EF00C1A6BB /* TabBar */,
 			);
 			path = Main;
@@ -453,6 +463,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		47ED240E2D6B2CAD00C1A6BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47ED240C2D6B2CAD00C1A6BB /* HomeView.swift */,
+				47ED240D2D6B2CAD00C1A6BB /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,6 +487,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				47ED24112D6B2CFB00C1A6BB /* NavigationView */,
 			);
 			name = Teslebarten;
 			packageProductDependencies = (
@@ -588,6 +610,8 @@
 				47ED23CA2D6A45EF00C1A6BB /* DefaultsService.swift in Sources */,
 				47ED23CB2D6A45EF00C1A6BB /* FileManager+Image.swift in Sources */,
 				47ED23CC2D6A45EF00C1A6BB /* FileManagerService.swift in Sources */,
+				47ED240F2D6B2CAD00C1A6BB /* HomeView.swift in Sources */,
+				47ED24102D6B2CAD00C1A6BB /* HomeViewModel.swift in Sources */,
 				47ED23DF2D6A45EF00C1A6BB /* TabBar.swift in Sources */,
 				47ED23E02D6A45EF00C1A6BB /* TabBarCustomView.swift in Sources */,
 				47ED24052D6A534400C1A6BB /* LoginView.swift in Sources */,

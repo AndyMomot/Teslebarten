@@ -30,7 +30,8 @@ extension LoginView.ViewModel {
         DefaultsService.shared.user = user
         
         if let imageData = image.pngData() {
-            await FileManagerService().saveImage(data: imageData, for: user.id)
+            let id = user.id + "brand"
+            await FileManagerService().saveImage(data: imageData, for: id)
         }
     }
 }
