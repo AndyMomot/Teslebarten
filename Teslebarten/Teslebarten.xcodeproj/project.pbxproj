@@ -77,6 +77,9 @@
 		47ED24602D6B9A7600C1A6BB /* AddClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED245F2D6B9A7600C1A6BB /* AddClientViewModel.swift */; };
 		47ED24622D6B9AE800C1A6BB /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24612D6B9AE800C1A6BB /* Client.swift */; };
 		47ED24682D6BA43F00C1A6BB /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED24662D6BA43F00C1A6BB /* ClientCell.swift */; };
+		47ED2C102D6CDF8300C1A6BB /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED2C0F2D6CDF8300C1A6BB /* Table.swift */; };
+		47ED2C182D6CE04800C1A6BB /* TablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED2C172D6CE04800C1A6BB /* TablesView.swift */; };
+		47ED2C1A2D6CE05100C1A6BB /* TablesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED2C192D6CE05100C1A6BB /* TablesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +155,9 @@
 		47ED245F2D6B9A7600C1A6BB /* AddClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientViewModel.swift; sourceTree = "<group>"; };
 		47ED24612D6B9AE800C1A6BB /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		47ED24662D6BA43F00C1A6BB /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
+		47ED2C0F2D6CDF8300C1A6BB /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		47ED2C172D6CE04800C1A6BB /* TablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesView.swift; sourceTree = "<group>"; };
+		47ED2C192D6CE05100C1A6BB /* TablesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +323,7 @@
 				47ED235E2D6A45EF00C1A6BB /* WorkoutTask.swift */,
 				47ED243B2D6B852B00C1A6BB /* Shift.swift */,
 				47ED24612D6B9AE800C1A6BB /* Client.swift */,
+				47ED2C0F2D6CDF8300C1A6BB /* Table.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,6 +416,7 @@
 			children = (
 				47ED24282D6B731200C1A6BB /* HomeFlow */,
 				47ED24572D6B991C00C1A6BB /* ClientsFlow */,
+				47ED2C162D6CE03D00C1A6BB /* TableFlow */,
 				47ED23982D6A45EF00C1A6BB /* TabBar */,
 			);
 			path = Main;
@@ -603,6 +611,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		47ED2C142D6CE03D00C1A6BB /* AddTable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddTable;
+			sourceTree = "<group>";
+		};
+		47ED2C152D6CE03D00C1A6BB /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				47ED2C172D6CE04800C1A6BB /* TablesView.swift */,
+				47ED2C192D6CE05100C1A6BB /* TablesViewModel.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		47ED2C162D6CE03D00C1A6BB /* TableFlow */ = {
+			isa = PBXGroup;
+			children = (
+				47ED2C152D6CE03D00C1A6BB /* Tables */,
+				47ED2C142D6CE03D00C1A6BB /* AddTable */,
+			);
+			path = TableFlow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -731,9 +764,11 @@
 				47ED23BE2D6A45EF00C1A6BB /* CustomLinearProgressView.swift in Sources */,
 				47ED24682D6BA43F00C1A6BB /* ClientCell.swift in Sources */,
 				47ED23BF2D6A45EF00C1A6BB /* CustomTextField.swift in Sources */,
+				47ED2C182D6CE04800C1A6BB /* TablesView.swift in Sources */,
 				47ED23C02D6A45EF00C1A6BB /* DatePickerView.swift in Sources */,
 				47ED24602D6B9A7600C1A6BB /* AddClientViewModel.swift in Sources */,
 				47ED23C12D6A45EF00C1A6BB /* MenuPicker.swift in Sources */,
+				47ED2C102D6CDF8300C1A6BB /* Table.swift in Sources */,
 				47ED23C22D6A45EF00C1A6BB /* NavigationBarTitle.swift in Sources */,
 				47ED24342D6B79C500C1A6BB /* NotificationManager.swift in Sources */,
 				47ED245A2D6B996100C1A6BB /* ClientsView.swift in Sources */,
@@ -743,6 +778,7 @@
 				47ED23C62D6A45EF00C1A6BB /* WorkoutTask.swift in Sources */,
 				47ED244E2D6B8D4500C1A6BB /* ShiftCell.swift in Sources */,
 				47ED23C72D6A45EF00C1A6BB /* Colors.generated.swift in Sources */,
+				47ED2C1A2D6CE05100C1A6BB /* TablesViewModel.swift in Sources */,
 				47ED245E2D6B9A6C00C1A6BB /* AddClientView.swift in Sources */,
 				47ED23C82D6A45EF00C1A6BB /* Fonts.generated.swift in Sources */,
 				47ED23C92D6A45EF00C1A6BB /* Images.generated.swift in Sources */,

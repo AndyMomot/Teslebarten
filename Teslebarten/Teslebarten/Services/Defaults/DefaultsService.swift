@@ -75,6 +75,21 @@ extension DefaultsService {
             }
         }
     }
+    
+    var tables: [Table] {
+        get {
+            if let data = standard.data(forKey: Keys.tables.rawValue),
+               let items = try? JSONDecoder().decode([Table].self, from: data) {
+                return items
+            }
+            return []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.set(data, forKey: Keys.tables.rawValue)
+            }
+        }
+    }
 }
 
 // MARK: - Keys
@@ -84,5 +99,6 @@ extension DefaultsService {
         case user
         case shifts
         case clients
+        case tables
     }
 }
