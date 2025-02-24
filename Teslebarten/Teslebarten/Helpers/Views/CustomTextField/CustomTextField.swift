@@ -58,6 +58,7 @@ struct CustomTextField: View {
                 .padding(1)
             }
         }
+        .multilineTextAlignment(.leading)
         .hideKeyboardWhenTappedAround()
         .padding(.horizontal, 4)
     }

@@ -14,9 +14,20 @@ struct Table: Identifiable, Codable {
 }
 
 extension Table {
-    enum Status: Codable {
-        case free
+    enum Status: Int, Codable, CaseIterable {
+        case free = 0
         case reserved
         case taken
+        
+        var name: String {
+            switch self {
+            case .free:
+                return "Gratis"
+            case .reserved:
+                return "Reservado"
+            case .taken:
+                return "Ocupado"
+            }
+        }
     }
 }

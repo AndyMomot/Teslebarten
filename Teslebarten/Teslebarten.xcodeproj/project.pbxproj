@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47547F742D6CE2120033EEF3 /* AddTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F732D6CE2120033EEF3 /* AddTableView.swift */; };
+		47547F762D6CE2180033EEF3 /* AddTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F752D6CE2180033EEF3 /* AddTableViewModel.swift */; };
+		47547F7E2D6CE8FD0033EEF3 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F7C2D6CE8FD0033EEF3 /* TableCell.swift */; };
+		47547F802D6CEE5F0033EEF3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F7F2D6CEE5F0033EEF3 /* Order.swift */; };
+		47547F8B2D6CEFE70033EEF3 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F882D6CEFE70033EEF3 /* OrdersView.swift */; };
+		47547F8C2D6CEFE70033EEF3 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F892D6CEFE70033EEF3 /* OrdersViewModel.swift */; };
+		47547F962D6CF5520033EEF3 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F932D6CF5520033EEF3 /* AddOrderView.swift */; };
+		47547F972D6CF5520033EEF3 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F942D6CF5520033EEF3 /* AddOrderViewModel.swift */; };
+		47547F9D2D6CF9750033EEF3 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F9B2D6CF9750033EEF3 /* OrderCell.swift */; };
 		47ED22862D6A45C100C1A6BB /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 47ED22852D6A45C100C1A6BB /* swiftgen.yml */; };
 		47ED23B32D6A45EF00C1A6BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED233D2D6A45EF00C1A6BB /* AppDelegate.swift */; };
 		47ED23B42D6A45EF00C1A6BB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED233E2D6A45EF00C1A6BB /* RootViewController.swift */; };
@@ -27,7 +36,6 @@
 		47ED23C32D6A45EF00C1A6BB /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED23572D6A45EF00C1A6BB /* NextButton.swift */; };
 		47ED23C42D6A45EF00C1A6BB /* SwiftUIViewWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED23592D6A45EF00C1A6BB /* SwiftUIViewWebView.swift */; };
 		47ED23C52D6A45EF00C1A6BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED235D2D6A45EF00C1A6BB /* User.swift */; };
-		47ED23C62D6A45EF00C1A6BB /* WorkoutTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED235E2D6A45EF00C1A6BB /* WorkoutTask.swift */; };
 		47ED23C72D6A45EF00C1A6BB /* Colors.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED23612D6A45EF00C1A6BB /* Colors.generated.swift */; };
 		47ED23C82D6A45EF00C1A6BB /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED23632D6A45EF00C1A6BB /* Fonts.generated.swift */; };
 		47ED23C92D6A45EF00C1A6BB /* Images.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED23702D6A45EF00C1A6BB /* Images.generated.swift */; };
@@ -83,6 +91,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47547F732D6CE2120033EEF3 /* AddTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableView.swift; sourceTree = "<group>"; };
+		47547F752D6CE2180033EEF3 /* AddTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewModel.swift; sourceTree = "<group>"; };
+		47547F7C2D6CE8FD0033EEF3 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		47547F7F2D6CEE5F0033EEF3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		47547F882D6CEFE70033EEF3 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		47547F892D6CEFE70033EEF3 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		47547F932D6CF5520033EEF3 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		47547F942D6CF5520033EEF3 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		47547F9B2D6CF9750033EEF3 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		47ED226C2D6A451B00C1A6BB /* Teslebarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teslebarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ED22852D6A45C100C1A6BB /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		47ED233D2D6A45EF00C1A6BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +121,6 @@
 		47ED23572D6A45EF00C1A6BB /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		47ED23592D6A45EF00C1A6BB /* SwiftUIViewWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewWebView.swift; sourceTree = "<group>"; };
 		47ED235D2D6A45EF00C1A6BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		47ED235E2D6A45EF00C1A6BB /* WorkoutTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTask.swift; sourceTree = "<group>"; };
 		47ED23602D6A45EF00C1A6BB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		47ED23612D6A45EF00C1A6BB /* Colors.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.generated.swift; sourceTree = "<group>"; };
 		47ED23632D6A45EF00C1A6BB /* Fonts.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.generated.swift; sourceTree = "<group>"; };
@@ -171,6 +187,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47547F7D2D6CE8FD0033EEF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47547F7C2D6CE8FD0033EEF3 /* TableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47547F8A2D6CEFE70033EEF3 /* OrdersFlow */ = {
+			isa = PBXGroup;
+			children = (
+				47547F8D2D6CF2690033EEF3 /* Orders */,
+				47547F952D6CF5520033EEF3 /* AddOrder */,
+			);
+			path = OrdersFlow;
+			sourceTree = "<group>";
+		};
+		47547F8D2D6CF2690033EEF3 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				47547F9C2D6CF9750033EEF3 /* Views */,
+				47547F882D6CEFE70033EEF3 /* OrdersView.swift */,
+				47547F892D6CEFE70033EEF3 /* OrdersViewModel.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		47547F952D6CF5520033EEF3 /* AddOrder */ = {
+			isa = PBXGroup;
+			children = (
+				47547F932D6CF5520033EEF3 /* AddOrderView.swift */,
+				47547F942D6CF5520033EEF3 /* AddOrderViewModel.swift */,
+			);
+			path = AddOrder;
+			sourceTree = "<group>";
+		};
+		47547F9C2D6CF9750033EEF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47547F9B2D6CF9750033EEF3 /* OrderCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		47ED22632D6A451B00C1A6BB = {
 			isa = PBXGroup;
 			children = (
@@ -320,10 +380,10 @@
 			isa = PBXGroup;
 			children = (
 				47ED235D2D6A45EF00C1A6BB /* User.swift */,
-				47ED235E2D6A45EF00C1A6BB /* WorkoutTask.swift */,
 				47ED243B2D6B852B00C1A6BB /* Shift.swift */,
 				47ED24612D6B9AE800C1A6BB /* Client.swift */,
 				47ED2C0F2D6CDF8300C1A6BB /* Table.swift */,
+				47547F7F2D6CEE5F0033EEF3 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,6 +477,7 @@
 				47ED24282D6B731200C1A6BB /* HomeFlow */,
 				47ED24572D6B991C00C1A6BB /* ClientsFlow */,
 				47ED2C162D6CE03D00C1A6BB /* TableFlow */,
+				47547F8A2D6CEFE70033EEF3 /* OrdersFlow */,
 				47ED23982D6A45EF00C1A6BB /* TabBar */,
 			);
 			path = Main;
@@ -614,6 +675,8 @@
 		47ED2C142D6CE03D00C1A6BB /* AddTable */ = {
 			isa = PBXGroup;
 			children = (
+				47547F732D6CE2120033EEF3 /* AddTableView.swift */,
+				47547F752D6CE2180033EEF3 /* AddTableViewModel.swift */,
 			);
 			path = AddTable;
 			sourceTree = "<group>";
@@ -621,6 +684,7 @@
 		47ED2C152D6CE03D00C1A6BB /* Tables */ = {
 			isa = PBXGroup;
 			children = (
+				47547F7D2D6CE8FD0033EEF3 /* Views */,
 				47ED2C172D6CE04800C1A6BB /* TablesView.swift */,
 				47ED2C192D6CE05100C1A6BB /* TablesViewModel.swift */,
 			);
@@ -753,6 +817,8 @@
 				47ED24312D6B73A100C1A6BB /* CustomNavigationView.swift in Sources */,
 				47ED23B62D6A45EF00C1A6BB /* Date+Additions.swift in Sources */,
 				47ED24512D6B8DBA00C1A6BB /* ShiftDetails.swift in Sources */,
+				47547F8B2D6CEFE70033EEF3 /* OrdersView.swift in Sources */,
+				47547F8C2D6CEFE70033EEF3 /* OrdersViewModel.swift in Sources */,
 				47ED23B72D6A45EF00C1A6BB /* Double+Additions.swift in Sources */,
 				47ED23B82D6A45EF00C1A6BB /* String+Additions.swift in Sources */,
 				47ED23B92D6A45EF00C1A6BB /* UINavigationController+Additions.swift in Sources */,
@@ -764,18 +830,21 @@
 				47ED23BE2D6A45EF00C1A6BB /* CustomLinearProgressView.swift in Sources */,
 				47ED24682D6BA43F00C1A6BB /* ClientCell.swift in Sources */,
 				47ED23BF2D6A45EF00C1A6BB /* CustomTextField.swift in Sources */,
+				47547F802D6CEE5F0033EEF3 /* Order.swift in Sources */,
 				47ED2C182D6CE04800C1A6BB /* TablesView.swift in Sources */,
 				47ED23C02D6A45EF00C1A6BB /* DatePickerView.swift in Sources */,
 				47ED24602D6B9A7600C1A6BB /* AddClientViewModel.swift in Sources */,
 				47ED23C12D6A45EF00C1A6BB /* MenuPicker.swift in Sources */,
 				47ED2C102D6CDF8300C1A6BB /* Table.swift in Sources */,
+				47547F742D6CE2120033EEF3 /* AddTableView.swift in Sources */,
 				47ED23C22D6A45EF00C1A6BB /* NavigationBarTitle.swift in Sources */,
 				47ED24342D6B79C500C1A6BB /* NotificationManager.swift in Sources */,
+				47547F762D6CE2180033EEF3 /* AddTableViewModel.swift in Sources */,
 				47ED245A2D6B996100C1A6BB /* ClientsView.swift in Sources */,
 				47ED23C32D6A45EF00C1A6BB /* NextButton.swift in Sources */,
 				47ED23C42D6A45EF00C1A6BB /* SwiftUIViewWebView.swift in Sources */,
+				47547F9D2D6CF9750033EEF3 /* OrderCell.swift in Sources */,
 				47ED23C52D6A45EF00C1A6BB /* User.swift in Sources */,
-				47ED23C62D6A45EF00C1A6BB /* WorkoutTask.swift in Sources */,
 				47ED244E2D6B8D4500C1A6BB /* ShiftCell.swift in Sources */,
 				47ED23C72D6A45EF00C1A6BB /* Colors.generated.swift in Sources */,
 				47ED2C1A2D6CE05100C1A6BB /* TablesViewModel.swift in Sources */,
@@ -789,6 +858,8 @@
 				47ED23E02D6A45EF00C1A6BB /* TabBarCustomView.swift in Sources */,
 				47ED24292D6B731200C1A6BB /* HomeView.swift in Sources */,
 				47ED242A2D6B731200C1A6BB /* HomeViewModel.swift in Sources */,
+				47547F962D6CF5520033EEF3 /* AddOrderView.swift in Sources */,
+				47547F972D6CF5520033EEF3 /* AddOrderViewModel.swift in Sources */,
 				47ED242B2D6B731200C1A6BB /* ProfileView.swift in Sources */,
 				47ED242C2D6B731200C1A6BB /* ProfileViewModel.swift in Sources */,
 				47ED24052D6A534400C1A6BB /* LoginView.swift in Sources */,
@@ -801,6 +872,7 @@
 				47ED23E72D6A45EF00C1A6BB /* OnboardingViewModel.swift in Sources */,
 				47ED23E82D6A45EF00C1A6BB /* OnboardingViewTabView.swift in Sources */,
 				47ED23E92D6A45EF00C1A6BB /* PreloaderView.swift in Sources */,
+				47547F7E2D6CE8FD0033EEF3 /* TableCell.swift in Sources */,
 				47ED23EA2D6A45EF00C1A6BB /* RootContentView.swift in Sources */,
 				47ED23EB2D6A45EF00C1A6BB /* RootContentViewModel.swift in Sources */,
 			);

@@ -16,10 +16,10 @@ struct TabBar: View {
                 ClientsView()
                     .tag(TabBarSelectionView.clients.rawValue)
                 
-                Text("tables")
+                TablesView()
                     .tag(TabBarSelectionView.tables.rawValue)
                 
-                Text("orders")
+                OrdersView()
                     .tag(TabBarSelectionView.orders.rawValue)
                     .environmentObject(viewModel)
                 
