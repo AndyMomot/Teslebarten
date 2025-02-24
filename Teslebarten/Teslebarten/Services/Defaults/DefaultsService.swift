@@ -105,6 +105,21 @@ extension DefaultsService {
             }
         }
     }
+    
+    var transaction: [Transaction] {
+        get {
+            if let data = standard.data(forKey: Keys.transaction.rawValue),
+               let items = try? JSONDecoder().decode([Transaction].self, from: data) {
+                return items
+            }
+            return []
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.set(data, forKey: Keys.transaction.rawValue)
+            }
+        }
+    }
 }
 
 // MARK: - Keys
@@ -116,5 +131,6 @@ extension DefaultsService {
         case clients
         case tables
         case orders
+        case transaction
     }
 }

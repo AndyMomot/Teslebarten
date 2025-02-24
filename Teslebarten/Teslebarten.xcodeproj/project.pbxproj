@@ -16,6 +16,13 @@
 		47547F962D6CF5520033EEF3 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F932D6CF5520033EEF3 /* AddOrderView.swift */; };
 		47547F972D6CF5520033EEF3 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F942D6CF5520033EEF3 /* AddOrderViewModel.swift */; };
 		47547F9D2D6CF9750033EEF3 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F9B2D6CF9750033EEF3 /* OrderCell.swift */; };
+		47547F9F2D6D02A80033EEF3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547F9E2D6D02A80033EEF3 /* Transaction.swift */; };
+		47547FA72D6D03A30033EEF3 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547FA62D6D03A30033EEF3 /* StatisticsView.swift */; };
+		47547FA92D6D03AB0033EEF3 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547FA82D6D03AB0033EEF3 /* StatisticsViewModel.swift */; };
+		47547FAF2D6D064D0033EEF3 /* StatisticChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547FAD2D6D064D0033EEF3 /* StatisticChart.swift */; };
+		47547FB12D6D0A9D0033EEF3 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547FB02D6D0A9D0033EEF3 /* TransactionCell.swift */; };
+		47547FB32D6D0BE30033EEF3 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547FB22D6D0BE30033EEF3 /* AddTransactionView.swift */; };
+		47547FB52D6D0BE90033EEF3 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47547FB42D6D0BE90033EEF3 /* AddTransactionViewModel.swift */; };
 		47ED22862D6A45C100C1A6BB /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 47ED22852D6A45C100C1A6BB /* swiftgen.yml */; };
 		47ED23B32D6A45EF00C1A6BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED233D2D6A45EF00C1A6BB /* AppDelegate.swift */; };
 		47ED23B42D6A45EF00C1A6BB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED233E2D6A45EF00C1A6BB /* RootViewController.swift */; };
@@ -100,6 +107,13 @@
 		47547F932D6CF5520033EEF3 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 		47547F942D6CF5520033EEF3 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
 		47547F9B2D6CF9750033EEF3 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		47547F9E2D6D02A80033EEF3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		47547FA62D6D03A30033EEF3 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		47547FA82D6D03AB0033EEF3 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		47547FAD2D6D064D0033EEF3 /* StatisticChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticChart.swift; sourceTree = "<group>"; };
+		47547FB02D6D0A9D0033EEF3 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		47547FB22D6D0BE30033EEF3 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		47547FB42D6D0BE90033EEF3 /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
 		47ED226C2D6A451B00C1A6BB /* Teslebarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teslebarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ED22852D6A45C100C1A6BB /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		47ED233D2D6A45EF00C1A6BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +241,43 @@
 			isa = PBXGroup;
 			children = (
 				47547F9B2D6CF9750033EEF3 /* OrderCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47547FA32D6D03970033EEF3 /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				47547FB22D6D0BE30033EEF3 /* AddTransactionView.swift */,
+				47547FB42D6D0BE90033EEF3 /* AddTransactionViewModel.swift */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
+		47547FA42D6D03970033EEF3 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				47547FAE2D6D064D0033EEF3 /* Views */,
+				47547FA62D6D03A30033EEF3 /* StatisticsView.swift */,
+				47547FA82D6D03AB0033EEF3 /* StatisticsViewModel.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		47547FA52D6D03970033EEF3 /* StatisticsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				47547FA42D6D03970033EEF3 /* Statistics */,
+				47547FA32D6D03970033EEF3 /* AddTransaction */,
+			);
+			path = StatisticsFlow;
+			sourceTree = "<group>";
+		};
+		47547FAE2D6D064D0033EEF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47547FAD2D6D064D0033EEF3 /* StatisticChart.swift */,
+				47547FB02D6D0A9D0033EEF3 /* TransactionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +435,7 @@
 				47ED24612D6B9AE800C1A6BB /* Client.swift */,
 				47ED2C0F2D6CDF8300C1A6BB /* Table.swift */,
 				47547F7F2D6CEE5F0033EEF3 /* Order.swift */,
+				47547F9E2D6D02A80033EEF3 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -478,6 +530,7 @@
 				47ED24572D6B991C00C1A6BB /* ClientsFlow */,
 				47ED2C162D6CE03D00C1A6BB /* TableFlow */,
 				47547F8A2D6CEFE70033EEF3 /* OrdersFlow */,
+				47547FA52D6D03970033EEF3 /* StatisticsFlow */,
 				47ED23982D6A45EF00C1A6BB /* TabBar */,
 			);
 			path = Main;
@@ -814,6 +867,7 @@
 				47ED23B52D6A45EF00C1A6BB /* SceneDelegate.swift in Sources */,
 				47ED243A2D6B7C3F00C1A6BB /* ProfileButton.swift in Sources */,
 				47ED243C2D6B852B00C1A6BB /* Shift.swift in Sources */,
+				47547FB12D6D0A9D0033EEF3 /* TransactionCell.swift in Sources */,
 				47ED24312D6B73A100C1A6BB /* CustomNavigationView.swift in Sources */,
 				47ED23B62D6A45EF00C1A6BB /* Date+Additions.swift in Sources */,
 				47ED24512D6B8DBA00C1A6BB /* ShiftDetails.swift in Sources */,
@@ -822,6 +876,8 @@
 				47ED23B72D6A45EF00C1A6BB /* Double+Additions.swift in Sources */,
 				47ED23B82D6A45EF00C1A6BB /* String+Additions.swift in Sources */,
 				47ED23B92D6A45EF00C1A6BB /* UINavigationController+Additions.swift in Sources */,
+				47547FAF2D6D064D0033EEF3 /* StatisticChart.swift in Sources */,
+				47547FA72D6D03A30033EEF3 /* StatisticsView.swift in Sources */,
 				47ED245C2D6B996A00C1A6BB /* ClientsViewModel.swift in Sources */,
 				47ED23BA2D6A45EF00C1A6BB /* View+Additions.swift in Sources */,
 				47ED23BB2D6A45EF00C1A6BB /* ImagePicker.swift in Sources */,
@@ -846,10 +902,13 @@
 				47547F9D2D6CF9750033EEF3 /* OrderCell.swift in Sources */,
 				47ED23C52D6A45EF00C1A6BB /* User.swift in Sources */,
 				47ED244E2D6B8D4500C1A6BB /* ShiftCell.swift in Sources */,
+				47547FA92D6D03AB0033EEF3 /* StatisticsViewModel.swift in Sources */,
 				47ED23C72D6A45EF00C1A6BB /* Colors.generated.swift in Sources */,
 				47ED2C1A2D6CE05100C1A6BB /* TablesViewModel.swift in Sources */,
 				47ED245E2D6B9A6C00C1A6BB /* AddClientView.swift in Sources */,
+				47547FB52D6D0BE90033EEF3 /* AddTransactionViewModel.swift in Sources */,
 				47ED23C82D6A45EF00C1A6BB /* Fonts.generated.swift in Sources */,
+				47547FB32D6D0BE30033EEF3 /* AddTransactionView.swift in Sources */,
 				47ED23C92D6A45EF00C1A6BB /* Images.generated.swift in Sources */,
 				47ED23CA2D6A45EF00C1A6BB /* DefaultsService.swift in Sources */,
 				47ED23CB2D6A45EF00C1A6BB /* FileManager+Image.swift in Sources */,
@@ -869,6 +928,7 @@
 				47ED23E62D6A45EF00C1A6BB /* OnboardingView.swift in Sources */,
 				47ED24452D6B871400C1A6BB /* AddShiftView.swift in Sources */,
 				47ED24462D6B871400C1A6BB /* AddShiftViewModel.swift in Sources */,
+				47547F9F2D6D02A80033EEF3 /* Transaction.swift in Sources */,
 				47ED23E72D6A45EF00C1A6BB /* OnboardingViewModel.swift in Sources */,
 				47ED23E82D6A45EF00C1A6BB /* OnboardingViewTabView.swift in Sources */,
 				47ED23E92D6A45EF00C1A6BB /* PreloaderView.swift in Sources */,

@@ -45,6 +45,7 @@ internal enum Asset {
   internal static let profileSB = ImageAsset(name: "profileSB")
   internal static let quote = ImageAsset(name: "quote")
   internal static let table = ImageAsset(name: "table")
+  internal static let transaction = ImageAsset(name: "transaction")
   internal static let warning = ImageAsset(name: "warning")
   internal static let logo = ImageAsset(name: "logo")
   internal static let onboard1 = ImageAsset(name: "onboard1")
